@@ -1,0 +1,13 @@
+version: "3"
+services:
+  next-js:
+    build: .
+    container_name: next-js
+    ports:
+        - "5000:3000"
+    networks:
+        - nextjs
+    restart: always
+networks:
+  nextjs:
+  
