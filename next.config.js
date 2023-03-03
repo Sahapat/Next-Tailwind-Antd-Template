@@ -20,9 +20,7 @@ module.exports = withBundleAnalyzer(withAntdLess({
 	    }
 	  ]
   },
-  experimental: {
-    outputStandalone: true,
-  },
+  output: 'standalone',
   webpack(config) {
     config.module.rules.push({
       test: /\.md$/,
