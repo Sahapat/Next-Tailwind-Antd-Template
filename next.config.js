@@ -11,16 +11,11 @@ const fs = require('fs');
 const antdVariables = lessToJS(fs.readFileSync(path.resolve(__dirname, 'src/styles/variables.less'), 'utf8'));
 
 module.exports = withBundleAnalyzer(withAntdLess({
-  async redirects() {
-	  return [
-	    {
-	      source: '/',
-	      destination: '/home',
-	      permanent: true
-	    }
-	  ]
-  },
   output: 'standalone',
+  swcMinify: true,
+  experimental: {
+    forceSwcTransforms: true
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.md$/,
