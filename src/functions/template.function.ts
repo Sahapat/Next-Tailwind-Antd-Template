@@ -1,3 +1,3 @@
 export function templateFunction() {
-  return ""
+  return "templateFunction"
 }
