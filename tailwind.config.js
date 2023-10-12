@@ -6,6 +6,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     './src/views/**/*.{js,ts,jsx,tsx}"'
   ],
+  prefix: 'tw-',
   theme: {
     extend: {},
   },
