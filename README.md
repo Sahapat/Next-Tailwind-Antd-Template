@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs Template
 
-## Getting Started
+I created this template for my customer who have specific requirement to using Next, Tailwind and Ant Design together. But after I think for a while this template should be public for everyone. I'm open mind to improve my knowledge, you can pull-request. I hope this template could help someone who facing the same requirement as me.
 
-First, run the development server:
+## Support
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Ant Design
+- TailwindCSS with `tw-` prefix.
+- AnimateCSS
+- MomentJs
+- Zustand
+- SocketIO
+- Axios
+- React Icons
+- Jest
+- SCSS
+- TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Directory Structure
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- `__mocks__` for storing mocking data.
+- `__tests__` for storing test files.
+- `src`
+  - `actions` This directory containing the function which doing the application actions. The application action defined the function which changing the state or request to the server. For example, login, change password and etc.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+  - `components` This directory containing the React components. The component must be reusable and not strict to the context. For example, card, timeline item and etc.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  - `constants` For storing application constants.
 
-## Learn More
+  - `functions` You may confuse between the `actions` directory. The key difference is `functions` contain the function for computing and dealing the business logic without changing the application states. For example, the login action might be request to the server then got the user response and storing to the state. But for the `functions`, let's say we have the logic to project the data to the chart. We might named the function to `convertToLineChart`, this function is not changing the application state it receiving the data then output into desire format.
 
-To learn more about Next.js, take a look at the following resources:
+  - `hooks` For storing React hooks.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - `lib` For importing and customizing libraries.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - `pages` For storing Next page files.
 
-## Deploy on Vercel
+  - `store` For storing Zustand store files
+    - `interfaces` For storing store slice interfaces.
+    - `slices` For storing store slices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - `styles` For storing cascading style sheet files
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - `types` For storing application types and interfaces. The difference from `store/interfaces` is store interface is for Zustand slice interface only but this directory is for whole application types.
+
+  - `util` For sharing utility functions.
+  - `views` React component for holding business context and compositing application components.
