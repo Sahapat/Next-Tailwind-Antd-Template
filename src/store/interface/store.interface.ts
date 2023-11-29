@@ -1,3 +1,4 @@
 export interface IStoreState {
-  example: string
+  counter: number,
+  setCounter: (counter: number) => void
 }
