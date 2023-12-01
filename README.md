@@ -1,4 +1,4 @@
-# 📚 Next.js, Tailwind, Antd Template Project**
+# 📚 Next.js, Tailwind, Antd Template Project
 
 <img src="https://github.com/Sahapat/Next-Tailwind-Antd-Template/blob/master/captures/Landing.JPG" width="420"/>
 
