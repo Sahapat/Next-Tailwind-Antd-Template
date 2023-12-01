@@ -1,10 +1,15 @@
-# Nextjs Template
+# 📚 Next.js, Tailwind, Antd Template Project**
 
 <img src="https://github.com/Sahapat/Next-Tailwind-Antd-Template/blob/master/captures/Landing.JPG" width="420"/>
 
 I created this template for my customer who have specific requirement to using Next, Tailwind and Ant Design together. But after I think for a while this template should be public for everyone. I'm open mind to improve my knowledge, you can pull-request. I hope this template could help someone who facing the same requirement as me.
 
-## Support
+## 🚀 Get Started
+1. Clone the repository
+2. Follow the detailed documentation for setup and customization.
+3. Start building your awesome project!
+
+## 🌟Support
 
 - Ant Design
 - TailwindCSS with `tw-` prefix.
@@ -47,3 +52,14 @@ I created this template for my customer who have specific requirement to using N
 
   - `util` For sharing utility functions.
   - `views` React component for holding business context and compositing application components.
+
+# 👥 Maintainers
+- [Sahapat](https://github.com/Sahapat)
+
+# ⚖️ License
+This project is licensed under the [MIT License](LICENSE).
+
+# 🔄 Frequent Updates
+We strive to keep this template up-to-date with the latest technologies and best practices.
+
+If you find this template helpful, don't forget to ⭐️ it!
