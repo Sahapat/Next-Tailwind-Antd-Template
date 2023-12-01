@@ -1,5 +1,7 @@
 # Nextjs Template
 
+<img src="https://github.com/Sahapat/Next-Tailwind-Antd-Template/blob/master/captures/Landing.JPG" width="420"/>
+
 I created this template for my customer who have specific requirement to using Next, Tailwind and Ant Design together. But after I think for a while this template should be public for everyone. I'm open mind to improve my knowledge, you can pull-request. I hope this template could help someone who facing the same requirement as me.
 
 ## Support

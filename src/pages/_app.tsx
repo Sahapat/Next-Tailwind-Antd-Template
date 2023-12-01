@@ -4,10 +4,22 @@ import { ZustandHydration } from '@/store'
 import 'animate.css'
 import '../styles/main.scss'
 import '../styles/main.css'
+import { ConfigProvider } from 'antd'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <ZustandHydration>
-    <Component {...pageProps} />
+    <ConfigProvider theme={{
+      components: {
+        Layout: {
+          headerBg: '#1890ff',
+          triggerBg: '#fff',
+          triggerColor: '#000',
+          zeroTriggerWidth: 0
+        }
+      }
+    }}>
+      <Component {...pageProps} />
+    </ConfigProvider>
   </ZustandHydration>
 }
 
