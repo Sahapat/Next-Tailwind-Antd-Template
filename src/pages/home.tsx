@@ -1,20 +1,11 @@
 import Head from 'next/head'
 import { type NextPage } from 'next'
-import { useStore } from '@/store'
-import { useEffect } from 'react'
+import { AiFillBook } from 'react-icons/ai'
+import MainLayout from '@/components/MainLayout'
+import { Flex } from 'antd'
+import IntroductionView from '@/views/IntroductionView'
 
 const Home: NextPage = () => {
-  const { counter, setCounter } = useStore()
-  useEffect(() => {
-    function tick() {
-      setCounter(useStore.getState().counter + 1)
-    }
-    const intervalTick = setInterval(tick, 1000)
-    return () => {
-      setCounter(0);
-      clearInterval(intervalTick)
-    }
-  }, [setCounter])
   return (
     <>
       <div>
@@ -23,11 +14,22 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
       </div>
-      <div className='tw-w-full tw-h-screen'>
-        <div className='tw-w-full tw-h-full tw-flex tw-flex-col tw-justify-center'>
-          <h1 className='tw-text-center'>Hello From NextJs with Zustand Store data: {counter}</h1>
-        </div>
-      </div>
+      <MainLayout
+        title='Sample Layout'
+        menuItems={[
+          {
+            icon: <AiFillBook/>,
+            label: 'Nav 1'
+          },
+          {
+            icon: <AiFillBook/>,
+            label: 'Nav 2'
+          }
+        ]}>
+        <Flex justify='center' align='center' vertical className='tw-h-full tw-w-full'>
+          <IntroductionView/>
+        </Flex>
+      </MainLayout>
     </>
   )
 }
