@@ -1,3 +1,5 @@
+'use client'
+
 import { useStore } from "@/store"
 import { Button, Flex, Space } from "antd"
 import Image from "next/image"

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from "react"
 
 interface IProps { }
 
@@ -8,4 +8,4 @@ const Template: FC<IProps> = ({ }: IProps) => {
   )
 }
 
-export default Template;
+export default Template
